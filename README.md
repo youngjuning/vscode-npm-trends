@@ -22,3 +22,8 @@ vscode hover extension for https://www.npmtrends.com/
 学习之路道阻且长，关注「洛竹早茶馆」公众号，成长路上不孤单。
 
 ![](assets/luozhu.png)
+
+## Inspired by
+
+- [vscode npm](https://github.com/microsoft/vscode/tree/main/extensions/npm)
+- [varlet-vscode-extension](https://github.com/haoziqaq/varlet/tree/dev/packages/varlet-vscode-extension/)
