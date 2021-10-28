@@ -288,6 +288,18 @@
   resolved "https://registry.nlark.com/@types/json5/download/@types/json5-0.0.29.tgz#ee28707ae94e11d2b827bcbe5270bcea7f3e71ee"
   integrity sha1-7ihweulOEdK4J7y+UnC86n8+ce4=
 
+"@types/lodash.has@^4.5.6":
+  version "4.5.6"
+  resolved "https://registry.nlark.com/@types/lodash.has/download/@types/lodash.has-4.5.6.tgz#d94d3f0b45ced2ae76d632080daf70e9b76e29eb"
+  integrity sha1-2U0/C0XO0q521jIIDa9w6bduKes=
+  dependencies:
+    "@types/lodash" "*"
+
+"@types/lodash@*":
+  version "4.14.176"
+  resolved "https://registry.npmmirror.com/@types/lodash/download/@types/lodash-4.14.176.tgz#641150fc1cda36fbfa329de603bbb175d7ee20c0"
+  integrity sha1-ZBFQ/BzaNvv6Mp3mA7uxddfuIMA=
+
 "@types/minimatch@*":
   version "3.0.5"
   resolved "https://registry.nlark.com/@types/minimatch/download/@types/minimatch-3.0.5.tgz?cache=0&sync_timestamp=1629708337307&other_urls=https%3A%2F%2Fregistry.nlark.com%2F%40types%2Fminimatch%2Fdownload%2F%40types%2Fminimatch-3.0.5.tgz#1001cc5e6a3704b83c236027e77f2f58ea010f40"
@@ -4117,6 +4129,11 @@ vsce@^1.99.0:
     xml2js "^0.4.23"
     yauzl "^2.3.1"
     yazl "^2.2.2"
+
+vscode-nls-i18n@^0.2.4:
+  version "0.2.4"
+  resolved "https://registry.npmmirror.com/vscode-nls-i18n/download/vscode-nls-i18n-0.2.4.tgz#f8fcf1bd03c2ae2420627131b47157394e5f7638"
+  integrity sha1-+PzxvQPCriQgYnExtHFXOU5fdjg=
 
 vscode-test@^1.5.2:
   version "1.6.1"

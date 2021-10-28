@@ -11,6 +11,8 @@ vscode hover extension for https://www.npmtrends.com/
 
 ## Features
 
+![](https://cdn.jsdelivr.net/gh/youngjuning/images/202110281838138.png)
+
 ![](./assets/screenshot.gif)
 
 ## About Author
