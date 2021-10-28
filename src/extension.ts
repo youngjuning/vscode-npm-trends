@@ -24,8 +24,10 @@ export function activate(context: vscode.ExtensionContext) {
         has(documentTextObject, ['optionalDependencies', packageName]) ||
         has(documentTextObject, ['peerDependencies', packageName]))
     ) {
+      const str = new vscode.MarkdownString();
+      str.appendText(`${localize('npm-trends.key')}: ${NPM_TRENDS}/${packageName}`);
       return {
-        contents: [`${localize('npm-trends.key')}: ${NPM_TRENDS}/${packageName}`],
+        contents: [str],
       };
     }
     return null;
