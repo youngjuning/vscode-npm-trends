@@ -1,24 +1,45 @@
-// The module 'vscode' contains the VS Code extensibility API
-// Import the module and reference it with the alias vscode in your code below
 import vscode from 'vscode';
+import has from 'lodash.has';
 
-// this method is called when your extension is activated
-// your extension is activated the very first time the command is executed
+const NPM_TRENDS = 'https://www.npmtrends.com';
+
 export function activate(context: vscode.ExtensionContext) {
-  // Use the console to output diagnostic information (console.log) and errors (console.error)
-  // This line of code will only be executed once when your extension is activated
-  console.log('Congratulations, your extension "vscode-stackshare" is now active!');
+  console.log('Congratulations, your extension "vscode-npm-trends" is now active!');
 
-  // The command has been defined in the package.json file
-  // Now provide the implementation of the command with registerCommand
-  // The commandId parameter must match the command field in package.json
-  const disposable = vscode.commands.registerCommand('vscode-stackshare.helloWorld', () => {
-    // The code you place here will be executed every time your command is executed
-    // Display a message box to the user
-    vscode.window.showInformationMessage('Hello World from StackSare!');
-  });
+  const provideHover = (
+    document: vscode.TextDocument,
+    position: vscode.Position,
+    _token: vscode.CancellationToken
+  ) => {
+    const line = document.lineAt(position);
+    const documentTextObject = JSON.parse(document.getText());
+    const isWordRange = document.getWordRangeAtPosition(position);
+    const packageName = line.text.replaceAll(/"/g, '').replaceAll(/ /g, '').split(':')[0];
+    if (
+      isWordRange &&
+      (has(documentTextObject, ['devDependencies', packageName]) ||
+        has(documentTextObject, ['devDependencies', packageName]) ||
+        has(documentTextObject, ['optionalDependencies', packageName]) ||
+        has(documentTextObject, ['peerDependencies', packageName]))
+    ) {
+      return {
+        contents: [`npm trends: ${NPM_TRENDS}/${packageName}`],
+      };
+    }
+    return null;
+  };
 
-  context.subscriptions.push(disposable);
+  const npmSelector: vscode.DocumentSelector = {
+    language: 'json',
+    scheme: 'file',
+    pattern: '**/package.json',
+  };
+
+  context.subscriptions.push(
+    vscode.languages.registerHoverProvider(npmSelector, {
+      provideHover,
+    })
+  );
 }
 
 // this method is called when your extension is deactivated
