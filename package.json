@@ -2,7 +2,7 @@
   "name": "npm-trends",
   "displayName": "NPM Trends",
   "description": "vscode hover extension for https://www.npmtrends.com/",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "icon": "assets/icon.png",
   "license": "MIT",
   "publisher": "youngjuning",

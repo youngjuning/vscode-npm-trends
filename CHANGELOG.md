@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.0.5](https://github.com/youngjuning/vscode-npm-trends/compare/v0.0.4...v0.0.5) (2021-10-30)
+
+
+### Features
+
+* remove npm 包 ([f6b67d9](https://github.com/youngjuning/vscode-npm-trends/commit/f6b67d9248e0d57a42752bc3537fc0178742c437))
+
 ### [0.0.4](https://github.com/youngjuning/vscode-npm-trends/compare/v0.0.3...v0.0.4) (2021-10-30)
 
 
