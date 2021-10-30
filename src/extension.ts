@@ -4,7 +4,6 @@ import has from 'lodash.has';
 const { init, localize } = require('vscode-nls-i18n');
 
 const NPM_TRENDS = 'https://www.npmtrends.com';
-const NPM_PACKAGE = 'https://www.npmjs.com/package';
 const JSDELIVR = 'https://www.jsdelivr.com/package/npm';
 
 export function activate(context: vscode.ExtensionContext) {
@@ -28,8 +27,6 @@ export function activate(context: vscode.ExtensionContext) {
     ) {
       const str = new vscode.MarkdownString();
       str.appendText(`${localize('npm-trends.key')}: ${NPM_TRENDS}/${packageName}`);
-      str.appendText(`\n\n`);
-      str.appendText(`${localize('npm-package.key')}: ${NPM_PACKAGE}/${packageName}`);
       str.appendText(`\n\n`);
       str.appendText(`jedelivr: ${JSDELIVR}/${packageName}`);
       return {
