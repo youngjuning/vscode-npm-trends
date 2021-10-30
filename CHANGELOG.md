@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.0.4](https://github.com/youngjuning/vscode-npm-trends/compare/v0.0.3...v0.0.4) (2021-10-30)
+
+
+### Features
+
+* 支持 jsdelivr ([254c44b](https://github.com/youngjuning/vscode-npm-trends/commit/254c44b27e5872c6139a204d94e1cb5dab9b3559))
+
 ### [0.0.3](https://github.com/youngjuning/vscode-npm-trends/compare/v0.0.2...v0.0.3) (2021-10-29)
 
 
