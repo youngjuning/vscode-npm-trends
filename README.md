@@ -15,14 +15,6 @@ vscode hover extension for https://www.npmtrends.com/
 
 ![](./assets/screenshot.gif)
 
-## About Author
-
-洛竹，木系前端，现任职于杭城某独角兽跨端基础组。掘金首批签约作者、前端早早聊分享嘉宾、开源爱好者。专注前端开发，涉猎 Devops、Nodejs、Go、Rust 等编程语言和技术栈。信奉终身学习，热爱编程技术，享受写作分享是我的初心。
-
-学习之路道阻且长，关注「洛竹早茶馆」公众号，成长路上不孤单。
-
-![](assets/luozhu.png)
-
 ## Inspired by
 
 - [vscode npm](https://github.com/microsoft/vscode/tree/main/extensions/npm)
